@@ -1,13 +1,17 @@
 {
     "name": "vuejs-alert",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "description": "A more beautiful alert component for mobile webapp, by vue.js",
-    "main": "dist/vuejsAlert.min.js",
+    "main": "dist/vuejs-alert.min.js",
     "scripts": {
         "dev": "webpack-dev-server --config ./webpack.dev.config.js",
         "start": "npm run dev",
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack --display-error-details --config webpack.build.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fjj19951017/vuejs-alert.git"
     },
     "keywords": [
         "alert",

@@ -8,7 +8,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
-        filename: 'vuejsAlert.min.js',
+        filename: 'vuejs-alert.min.js',
         libraryTarget: 'umd',
         umdNamedDefine: true
     },

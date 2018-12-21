@@ -3,14 +3,14 @@
 ## Installation
 
 ```bash
-npm i vuejsAlert --save
+npm i vuejs-alert --save
 ```
 
 ## Usage
 
 ```javascript
 //main.js
-import Alert from 'vuejsAlert';
+import Alert from 'vuejs-alert';
 
 Vue.use(Alert);
 
@@ -18,12 +18,12 @@ Vue.use(Alert);
 this.$alert.show({text: 'hello world'});
 ```
 
-![vuejsAlert](./assets/images/alert.png)
+![vuejs-alert](http://thyrsi.com/t6/638/1545384149x2890173753.png)
 
 ## Option
 
-use Option to custom the component.  
-Option is an object.  
+use option to custom the component.  
+option is an object.  
 Use option in the following ways:
 
 ```javascript

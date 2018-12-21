@@ -39,7 +39,7 @@ Vue.use(Alert, option);
 option available:
 
 | key | type | default | description |
-| ------ | ------ | ------ | ------ |
+| :-: | :-: | :-: | ------ |
 | text | string |  | alert text |
 | confirmText | string | "确定" | text of confirm button |
 | cancelText | string | "取消" | text of cancel button |

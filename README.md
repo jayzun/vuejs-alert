@@ -22,8 +22,8 @@ this.$alert.show({text: 'hello world'});
 
 ## Option
 
-use Option to custom the component.  
-Option is an object.  
+use option to custom the component.  
+option is an object.  
 Use option in the following ways:
 
 ```javascript

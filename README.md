@@ -15,7 +15,10 @@ import Alert from 'vuejs-alert';
 Vue.use(Alert);
 
 //.vue files
+/*show component*/
 this.$alert.show({text: 'hello world'});
+/*close component*/
+this.$alert.close();
 ```
 
 ![vuejs-alert](http://thyrsi.com/t6/638/1545384149x2890173753.png)

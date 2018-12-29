@@ -33,6 +33,7 @@
             cancel() {
 
                 this.close().then(() => {
+                    window.$isAlert = false;
                     if (typeof this.cancelCallback === 'function') {
                         this.cancelCallback();
                     }
@@ -40,7 +41,7 @@
 
             },
             confirm() {
-
+                window.$isAlert = false;
                 this.close().then(() => {
                     if (typeof this.confirmCallback === 'function') {
                         this.confirmCallback();

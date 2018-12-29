@@ -11,13 +11,8 @@
             }
         },
         mounted() {
-            this.$alert.show({
-                text: 'hello world', 
-                confirmCallback: function() {
-                alert('你选择了确定');
-            }, cancelCallback: function() {
-                alert('你选择了取消');
-            }});
+            
+            this.$alert.show({text: 'hello world'});
         }
     }
 </script>

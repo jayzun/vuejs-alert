@@ -33,21 +33,21 @@ vuejsAlert.install = (Vue, globalOption) => {
 
     let Alert = {
         show(option) {
-            if(Vue.prototype.$isAlert === undefined) {
+            if(window.$isAlert === undefined) {
                 //组件仅初始化一次
                 initInstance();
             }
-            else if(Vue.prototype.$isAlert) {
+            else if(window.$isAlert) {
                 return;
             }
             //合并option
             merge(instance.$data, option);
             //显示alert组件
             instance.state = true;
-            Vue.prototype.$isAlert = true;
+            window.$isAlert = true;
         },
         close() {
-            Vue.prototype.$isAlert = false;
+            window.$isAlert = false;
             //隐藏alert组件
             instance.state = false;
         }

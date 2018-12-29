@@ -3,7 +3,6 @@ const webpack = require("webpack");
 const uglify = require("uglifyjs-webpack-plugin");
 
 module.exports = {
-    devtool: 'source-map',
     entry: "./src/index.js",
     output: {
         path: path.resolve(__dirname, './dist'),

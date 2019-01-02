@@ -21,6 +21,8 @@ this.$alert.show({text: 'hello world'});
 this.$alert.close();
 ```
 
+## Preview
+
 ![vuejs-alert](http://thyrsi.com/t6/638/1545384149x2890173753.png)
 
 ## Option

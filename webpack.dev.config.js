@@ -49,7 +49,7 @@ module.exports = {
     },
     devServer: {
         contentBase: path.join(__dirname, "example"),
-        port: 8088,
+        port: 8080,
         host: 'localhost',
         stats: 'errors-only',
         hot: true,

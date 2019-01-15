@@ -11,7 +11,6 @@ npm i vuejs-alert --save
 ```javascript
 //main.js
 import Alert from 'vuejs-alert';
-
 Vue.use(Alert);
 
 //.vue files
@@ -29,13 +28,15 @@ this.$alert.close();
 
 use option to custom the component.  
 option is an object.  
-Use option in the following ways:
+Use option in the following ways:  
+
+- Set option once.
 
 ```javascript
 this.$alert.show(option);
 ```
 
-or
+- Set option globally, the next time you show the component, option would still be effective.  
 
 ```javascript
 Vue.use(Alert, option);

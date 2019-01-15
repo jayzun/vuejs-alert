@@ -33,7 +33,6 @@
             cancel() {
 
                 this.close().then(() => {
-                    window.$isAlert = false;
                     if (typeof this.cancelCallback === 'function') {
                         this.cancelCallback();
                     }
@@ -41,7 +40,6 @@
 
             },
             confirm() {
-                window.$isAlert = false;
                 this.close().then(() => {
                     if (typeof this.confirmCallback === 'function') {
                         this.confirmCallback();
@@ -201,6 +199,7 @@
                     color: #ff6565;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    cursor: pointer;
                 }
 
                 .cancel {
@@ -212,6 +211,7 @@
                     color: #777;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    cursor: pointer;
                 }
             }
         }

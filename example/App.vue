@@ -13,6 +13,8 @@
         mounted() {
             
             this.$alert.show({text: 'hello world'});
+            this.$alert.close();
+            this.$alert.show();
         }
     }
 </script>

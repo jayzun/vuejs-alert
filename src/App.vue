@@ -16,7 +16,6 @@
     export default {
         name: 'vuejs-alert',
         data() {
-
             return {
                 state: false,
                 text: '',
@@ -29,27 +28,20 @@
             }
         },
         methods: {
-
             cancel() {
-
-                this.close().then(() => {
-                    if (typeof this.cancelCallback === 'function') {
-                        this.cancelCallback();
-                    }
-                });
-
+                if (typeof this.cancelCallback === 'function') {
+                    this.cancelCallback();
+                }
+                this.close();
             },
             confirm() {
-                this.close().then(() => {
-                    if (typeof this.confirmCallback === 'function') {
-                        this.confirmCallback();
-                    }
-                });
+                if (typeof this.confirmCallback === 'function') {
+                    this.confirmCallback();
+                }
+                this.close();
             },
             close() {
-
                 return new Promise((resolve, reject) => {
-
                     this.$refs.mask.className = 'mask fade-out';
                     this.$refs.alert.className = 'alert disappear';
                     setTimeout(() => {
@@ -61,9 +53,7 @@
         },
         watch: {
             state(curVal, preVal) {
-
                 let duration = parseInt(this.duration);
-
                 if (curVal) {
                     //根据duration设置的时间，alert自动消失
                     if (!isNaN(duration)) {
@@ -71,7 +61,6 @@
                             this.close();
                         }, duration);
                     }
-
                     this.$refs.mask.className = 'mask fade-in';
                     this.$refs.alert.className = 'alert showup';
                 }

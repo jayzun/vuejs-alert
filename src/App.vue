@@ -102,7 +102,7 @@
 
     .mask {
         display: flex;
-        position: absolute;
+        position: fixed;
         z-index: 1000;
         top: 0;
         left: 0;
